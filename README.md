@@ -33,3 +33,81 @@ Then change into the folder the git clone command will create:
 And finally install the dependencies:
 
 `npm install`
+
+Mean Stack Notes
+
+Update brew:
+$ brew update
+$ brew doctor
+
+Install Node:
+$ brew install node
+$ npm install -g grunt-cli
+
+Install Express:
+$ npm install -g express-generator
+
+If $ express results in express command not found use the output of the install to locate the bin path of express and export that to the $PATH. e.g. export PATH=/usr/local/share/npm/bin:$PATH
+
+Install Mongo DB:
+$ brew install mongodb
+mongod --config /usr/local/etc/mongod.conf
+/usr/local/Cellar/mongodb/3.4.4
+
+Create a directory which mongod will use to write data:
+$ sudo mkdir -p /data/db
+
+Run mongo:
+$ sudo mongod
+
+Install AngularJS
+$ npm install angular@1.6.4
+
+$ git clone -b chapter-03 https://github.com/simonholmes/getting-MEAN.git 
+npm install
+
+Npm start
+
+bson = require('../build/Release/bson');
+
+P@ssword123
+Password!@#
+
+P@ssword1234
+
+devlogger
+localsocket
+
+$ touch .gitignore
+
+git push heroku master
+
+
+$ npm install --save mongoose
+
+
+Mongo
+use Loc8r;
+show dbs;
+show collections;
+db.locations.find();
+
+db.locations.save({
+name: 'Starcups',
+address: '125 High Street, Reading, RG6 1PS', rating: 3,
+facilities: ['Hot drinks', 'Food', 'Premium wifi'], coords: [-0.9690884, 51.455041],
+openingTimes: [{
+    days: 'Monday - Friday',
+    opening: '7:00am',
+    closing: '7:00pm',
+    closed: false
+  }, {
+    days: 'Saturday',
+    opening: '8:00am',
+    closing: '5:00pm',
+    closed: false
+  }, {
+    days: 'Sunday',
+    closed: true
+  }]
+});
